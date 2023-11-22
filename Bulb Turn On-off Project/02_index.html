@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="02_style.css">
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" alt="" class="menu-img">
+            <img src="images/logo.png" alt="" class="logo-img">
+
+            <ul>
+               <a href=""><li>Latest</li></a>
+               <a href=""><li>Latest</li></a>
+               <a href=""><li>Latest</li></a>
+               <a href=""><li>Latest</li></a>
+            </ul>
+            <button type="button" onclick="toggleBtn()"  id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-container">
+            <img src="images/lamp.png" alt="" class="lamp">
+            <img src="images/light.png" alt="" class="light" id="light">
+        </div>
+
+        <div class="text-container">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis, ipsa accusamus cupiditate saepe optio corporis dicta. Deleniti ipsam exercitationem impedit. Voluptas reiciendis minus porro?</p>
+            <a href="fkk">Lorem ipsum dolor sit.</a>
+            
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        
+        </div>
+    </div>
+
+    <script>
+
+        function toggleBtn() {
+            var btn= document.getElementById("btn");
+            var light= document.getElementById("light");
+
+
+            btn.classList.toggle("active")
+            // btn.style.backgroundColor = "green"
+            // light.style.opacity =1
+            light.classList.toggle("on")
+            
+        }
+    </script>
+    
+</body>
+</html>
